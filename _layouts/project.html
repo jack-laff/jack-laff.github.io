@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<article class="project wrap">
+  <a class="back" href="{{ '/' | relative_url }}#projects">&larr; All projects</a>
+
+  <header class="project-header">
+    <p class="eyebrow">{{ page.context }}{% if page.period %} &middot; {{ page.period }}{% endif %}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="lead">{{ page.summary }}</p>
+    {% if page.status %}<p class="status">{{ page.status }}</p>{% endif %}
+  </header>
+
+  {% if page.metrics %}
+  <ul class="metrics">
+    {% for m in page.metrics %}
+    <li><strong>{{ m.value }}</strong><span>{{ m.label }}</span></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  <figure class="hero">
+    <img src="{{ page.cover | relative_url }}" alt="{{ page.cover_alt | default: page.title }}">
+  </figure>
+
+  {% if page.tools %}
+  <p class="tools">{% for t in page.tools %}<span>{{ t }}</span>{% endfor %}</p>
+  {% endif %}
+
+  <div class="prose">
+    {{ content }}
+  </div>
+
+  <a class="back" href="{{ '/' | relative_url }}#projects">&larr; All projects</a>
+</article>

@@ -1,0 +1,71 @@
+---
+layout: default
+title: Jack Lafferty
+---
+<section class="intro wrap">
+  <p class="eyebrow">Imperial MEng 2027 &middot; London</p>
+  <h1>{{ site.tagline }}</h1>
+  <p class="lead">
+    Final year MEng Mechanical Engineering student at Imperial College London. I spent 14 months as the sole
+    hardware engineer at a climate technology startup, where I took its core product from loss-making to
+    profitable and built the quality control system used on every unit. I'm looking for a graduate role in robotics.
+  </p>
+  <p class="cta">
+    <a class="button" href="#projects">View projects</a>
+    {% if site.cv_file != "" %}<a class="button ghost" href="{{ site.cv_file | relative_url }}">Download CV</a>{% endif %}
+    <a class="button ghost" href="mailto:{{ site.email }}">Get in touch</a>
+  </p>
+
+  <ul class="metrics">
+    <li><strong>&minus;36%</strong><span>unit cost, loss-making to profitable</span></li>
+    <li><strong>11% &rarr; &lt;1%</strong><span>production failure rate</span></li>
+    <li><strong>4,000+</strong><span>units through my QC system</span></li>
+    <li><strong>3 h &rarr; 30 min</strong><span>task automated by my wire cutter</span></li>
+  </ul>
+</section>
+
+<section id="projects" class="wrap">
+  <h2 class="section-title">Projects</h2>
+  <div class="grid">
+    {% assign projects = site.projects | sort: "order" %}
+    {% for p in projects %}
+    <a class="card" href="{{ p.url | relative_url }}">
+      <div class="card-img"><img src="{{ p.cover | relative_url }}" alt="{{ p.cover_alt | default: p.title }}" loading="lazy"></div>
+      <div class="card-body">
+        <p class="eyebrow">{{ p.context }}{% if p.status %} &middot; <span class="pill">{{ p.status }}</span>{% endif %}</p>
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.result }}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="about" class="wrap about">
+  <h2 class="section-title">About</h2>
+  <div class="about-grid">
+    <div class="prose">
+      <p>
+        I started out on building sites and in a garage, which is where I learned to build things and fix them
+        when they break. That led me to mechanical engineering at Imperial and to a year in industry at Adia Thermal,
+        a 10-person heat pump controls startup, where I owned all of the hardware: design, testing, suppliers and
+        production.
+      </p>
+      <p>
+        I'm now focused on robotics and automation. My final year project develops a camera module with machine learning
+        defect detection for a robotic battery cell assembly line, and I'm building a vision-guided pick-and-place arm
+        in ROS 2 alongside a robotic manipulators project.
+      </p>
+    </div>
+    <div class="skills">
+      <h3>Skills</h3>
+      <dl>
+        <dt>Design</dt><dd>Fusion 360, SolidWorks, ANSYS (FEA), DFM/DFA</dd>
+        <dt>Electronics</dt><dd>Raspberry Pi, PIC microcontrollers, PCB design (KiCad), sensors and actuators</dd>
+        <dt>Software</dt><dd>Python, C, Git, Docker, Linux and SSH</dd>
+        <dt>Robotics</dt><dd>ROS 2, MoveIt, Gazebo, OpenCV (in progress)</dd>
+        <dt>Making</dt><dd>Lathe, mill, waterjet, 3D printing</dd>
+      </dl>
+    </div>
+  </div>
+</section>
