@@ -7,12 +7,12 @@ title: Jack Lafferty
   <h1>{{ site.tagline }}</h1>
   <p class="lead">
     Final year MEng Mechanical Engineering student at Imperial College London. I spent 14 months as the sole
-    hardware engineer at a climate technology startup, where I took its core product from loss-making to
-    profitable and built the quality control system used on every unit. I'm looking for a graduate role in robotics.
+    hardware engineer at a climate tech startup, where I redesigned its core product for volume manufacture and
+    built the quality control system used on every unit. I'm looking for a graduate role in robotics.
   </p>
   <p class="cta">
     <a class="button" href="#projects">View projects</a>
-    {% if site.cv_file != "" %}<a class="button ghost" href="{{ site.cv_file | relative_url }}">Download CV</a>{% endif %}
+    <a class="button ghost" href="{{ site.cv_file | relative_url }}">Download CV</a>
     <a class="button ghost" href="mailto:{{ site.email }}">Get in touch</a>
   </p>
 
@@ -29,16 +29,25 @@ title: Jack Lafferty
   <div class="grid">
     {% assign projects = site.projects | sort: "order" %}
     {% for p in projects %}
+    {% assign cover = site.static_files | where: "path", p.cover | first %}
     <a class="card" href="{{ p.url | relative_url }}">
-      <div class="card-img"><img src="{{ p.cover | relative_url }}" alt="{{ p.cover_alt | default: p.title }}" loading="lazy"></div>
+      {% if cover %}<div class="card-img"><img src="{{ p.cover | relative_url }}" alt="{{ p.cover_alt | default: p.title }}" loading="lazy"></div>{% endif %}
       <div class="card-body">
-        <p class="eyebrow">{{ p.context }}{% if p.status %} &middot; <span class="pill">{{ p.status }}</span>{% endif %}</p>
+        <p class="eyebrow">{{ p.context }}</p>
         <h3>{{ p.title }}</h3>
         <p>{{ p.result }}</p>
       </div>
     </a>
     {% endfor %}
   </div>
+
+  <h3 class="subhead">Now building</h3>
+  <ul class="now">
+    <li><strong>Vision-guided pick-and-place arm</strong><span>ROS 2: an OpenCV node locates blocks from an RGB-D camera and MoveIt plans the grasps. In simulation (Gazebo).</span></li>
+    <li><strong>DC motor position control</strong><span>Simulink model and a PID controller in C on a Raspberry Pi Pico with encoder feedback, validating the model against hardware.</span></li>
+    <li><strong>Battery cell defect detection</strong><span>Final year project: a camera module with machine learning defect detection for a robotic battery cell line.</span></li>
+    <li><strong>Vision-guided maze robot</strong><span>An autonomous vehicle in embedded C that navigates a maze using visual cues.</span></li>
+  </ul>
 </section>
 
 <section id="about" class="wrap about">
@@ -48,22 +57,21 @@ title: Jack Lafferty
       <p>
         I started out on building sites and in a garage, which is where I learned to build things and fix them
         when they break. That led me to mechanical engineering at Imperial and to a year in industry at Adia Thermal,
-        a 10-person heat pump controls startup, where I owned all of the hardware: design, testing, suppliers and
-        production.
+        a 10-person heat pump controls startup, where I owned the hardware: design, testing, suppliers and production.
       </p>
       <p>
-        I'm now focused on robotics and automation. My final year project develops a camera module with machine learning
-        defect detection for a robotic battery cell assembly line, and I'm building a vision-guided pick-and-place arm
-        in ROS 2 alongside a robotic manipulators project.
+        Before that I was suspension designer and project manager for Imperial's Formula Student team, contributing
+        to a 10.1% vehicle mass reduction. Outside work I've built a DC motor from scratch, restored an outboard
+        boat engine and repaired a motorcycle.
       </p>
     </div>
     <div class="skills">
       <h3>Skills</h3>
       <dl>
         <dt>Design</dt><dd>Fusion 360, SolidWorks, ANSYS (FEA), DFM/DFA</dd>
-        <dt>Electronics</dt><dd>Raspberry Pi, PIC microcontrollers, PCB design (KiCad), sensors and actuators</dd>
-        <dt>Software</dt><dd>Python, C, Git, Docker, Linux and SSH</dd>
-        <dt>Robotics</dt><dd>ROS 2, MoveIt, Gazebo, OpenCV (in progress)</dd>
+        <dt>Electronics</dt><dd>Raspberry Pi, PIC microcontrollers, PCB design (KiCad), test rigs</dd>
+        <dt>Software</dt><dd>Python, C, MATLAB, Git, Docker, Linux and SSH</dd>
+        <dt>Robotics</dt><dd>ROS 2, MoveIt, Gazebo, OpenCV, Simulink, PID control</dd>
         <dt>Making</dt><dd>Lathe, mill, waterjet, 3D printing</dd>
       </dl>
     </div>

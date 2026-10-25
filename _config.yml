@@ -1,23 +1,20 @@
 # ---------------------------------------------------------------
-# Site settings: edit these, then push to GitHub.
+# Site settings
 # ---------------------------------------------------------------
 title: Jack Lafferty
 tagline: Mechatronics engineer building hardware from CAD to the production line
 description: Portfolio of Jack Lafferty, mechatronics engineer and final year MEng Mechanical Engineering student at Imperial College London.
 
-# Links shown in the header and footer. Leave a value blank ("") to hide it.
 email: jack2003.lafferty@gmail.com
 linkedin: https://www.linkedin.com/in/jack-lafferty
-github: ""            # e.g. https://github.com/your-username
-cv_file: ""           # e.g. /files/Jack_Lafferty_CV.pdf (upload the PDF to the files folder first)
+github: https://github.com/jack-laff
+cv_file: /files/Jack_Lafferty_CV.pdf
 
-# If the repository is called <your-username>.github.io, leave baseurl blank.
-# If it has any other name (e.g. "portfolio"), set baseurl: "/portfolio"
-url: ""
+url: "https://jack-laff.github.io"
 baseurl: ""
 
 # ---------------------------------------------------------------
-# You shouldn't need to change anything below this line.
+# No need to change anything below this line.
 # ---------------------------------------------------------------
 markdown: kramdown
 permalink: pretty
@@ -36,4 +33,4 @@ defaults:
 
 exclude:
   - README.md
-  - PROJECT_TEMPLATE.md
+  - UPLOAD_CHECKLIST.md
