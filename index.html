@@ -3,25 +3,32 @@ layout: default
 title: Jack Lafferty
 ---
 <section class="intro wrap">
-  <p class="eyebrow">Imperial MEng 2027 &middot; London</p>
-  <h1>{{ site.tagline }}</h1>
+  <p class="eyebrow">Mechatronics engineer &middot; Imperial MEng 2027 &middot; London</p>
+  <h1>Mechatronics engineer who took a startup's core product from prototype to production</h1>
   <p class="lead">
-    Final year MEng Mechanical Engineering student at Imperial College London. I spent 14 months as the sole
-    hardware engineer at a climate tech startup, where I redesigned its core product for volume manufacture and
-    built the quality control system used on every unit. I'm looking for a graduate role in robotics.
+    I spent 14 months as the sole hardware engineer at a heat pump controls startup: I redesigned its core product
+    for volume manufacture, cutting unit cost by 36%, and wrote the QC software used on 4,000+ devices.
+    I'm now a final year MEng student at Imperial College London, building ROS 2 and computer vision systems.
   </p>
+
+  <div class="story">
+    <p>
+      <strong>What drives me.</strong> I want to build robots that take on hard, repetitive physical work, in small
+      teams solving useful, meaningful problems. I'm looking for a graduate role in robotics and automation.
+    </p>
+    <p>
+      <strong>Background.</strong> I spent my summers as a construction labourer and a mechanics apprentice, which is
+      where I learned to build things and fix them when they break. That led to mechanical engineering at Imperial,
+      suspension design and project management for Formula Student, and a year in industry owning Adia Thermal's
+      hardware. Outside work I've built a DC motor from scratch, restored an outboard engine and repaired a motorcycle.
+    </p>
+  </div>
+
   <p class="cta">
     <a class="button" href="#projects">View projects</a>
     <a class="button ghost" href="{{ site.cv_file | relative_url }}">Download CV</a>
     <a class="button ghost" href="mailto:{{ site.email }}">Get in touch</a>
   </p>
-
-  <ul class="metrics">
-    <li><strong>&minus;36%</strong><span>unit cost, loss-making to profitable</span></li>
-    <li><strong>11% &rarr; &lt;1%</strong><span>production failure rate</span></li>
-    <li><strong>4,000+</strong><span>units through my QC system</span></li>
-    <li><strong>3 h &rarr; 30 min</strong><span>task automated by my wire cutter</span></li>
-  </ul>
 </section>
 
 <section id="projects" class="wrap">
@@ -50,30 +57,13 @@ title: Jack Lafferty
   </ul>
 </section>
 
-<section id="about" class="wrap about">
-  <h2 class="section-title">About</h2>
-  <div class="about-grid">
-    <div class="prose">
-      <p>
-        I started out on building sites and in a garage, which is where I learned to build things and fix them
-        when they break. That led me to mechanical engineering at Imperial and to a year in industry at Adia Thermal,
-        a 10-person heat pump controls startup, where I owned the hardware: design, testing, suppliers and production.
-      </p>
-      <p>
-        Before that I was suspension designer and project manager for Imperial's Formula Student team, contributing
-        to a 10.1% vehicle mass reduction. Outside work I've built a DC motor from scratch, restored an outboard
-        boat engine and repaired a motorcycle.
-      </p>
-    </div>
-    <div class="skills">
-      <h3>Skills</h3>
-      <dl>
-        <dt>Design</dt><dd>Fusion 360, SolidWorks, ANSYS (FEA), DFM/DFA</dd>
-        <dt>Electronics</dt><dd>Raspberry Pi, PIC microcontrollers, PCB design (KiCad), test rigs</dd>
-        <dt>Software</dt><dd>Python, C, MATLAB, Git, Docker, Linux and SSH</dd>
-        <dt>Robotics</dt><dd>ROS 2, MoveIt, Gazebo, OpenCV, Simulink, PID control</dd>
-        <dt>Making</dt><dd>Lathe, mill, waterjet, 3D printing</dd>
-      </dl>
-    </div>
-  </div>
+<section id="skills" class="wrap">
+  <h2 class="section-title">Skills</h2>
+  <dl class="skills-grid">
+    <div><dt>Design</dt><dd>Fusion 360, SolidWorks, ANSYS (FEA), DFM/DFA</dd></div>
+    <div><dt>Electronics</dt><dd>Raspberry Pi, PIC microcontrollers, PCB design (KiCad), test rigs</dd></div>
+    <div><dt>Software</dt><dd>Python, C, MATLAB, Git, Docker, Linux and SSH</dd></div>
+    <div><dt>Robotics</dt><dd>ROS 2, MoveIt, Gazebo, OpenCV, Simulink, PID control</dd></div>
+    <div><dt>Making</dt><dd>Lathe, mill, waterjet, 3D printing</dd></div>
+  </dl>
 </section>
