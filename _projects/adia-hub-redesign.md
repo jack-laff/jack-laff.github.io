@@ -6,14 +6,7 @@ order: 1
 summary: Took a loss-making heat pump control product to a profitable, production-ready design as the company's sole hardware engineer.
 result: Unit cost cut by 36%, from loss-making to profitable, with assembly time halved.
 cover: /assets/img/adia-hub-redesign/cover.jpg
-cover_alt: The redesigned Adia Hub
-gallery:
-  - src: /assets/img/adia-hub-redesign/before-after.jpg
-    alt: Original and redesigned Hub side by side
-    caption: Pilot unit (left) and the redesign (right).
-  - src: /assets/img/adia-hub-redesign/exploded.jpg
-    alt: Exploded view of the redesigned Hub
-    caption: Exploded view in Fusion 360.
+cover_alt: Render of the pilot Adia Hub (left) next to the redesign (right)
 metrics:
   - value: "−36%"
     label: unit cost, loss-making to profitable
@@ -30,6 +23,11 @@ The Adia Hub is Adia Thermal's core product: a pipework assembly with a pump, se
 controller that talks to smart radiator valves and temperature sensors. The pilot version lost money on every unit,
 was hard to assemble at scale, relied on a weak supply chain and was complicated to install.
 
+<figure>
+  <img src="{{ '/assets/img/adia-hub-redesign/internals.jpg' | relative_url }}" alt="Covers-off render of the pilot Hub's pipework next to the simpler redesign">
+  <figcaption>Covers off: the pilot (left) and the redesign (right).</figcaption>
+</figure>
+
 ## What I did
 
 As the only hardware engineer in a 10-person team, I led the redesign end to end and reported directly to the founders.
@@ -41,6 +39,17 @@ As the only hardware engineer in a 10-person team, I led the redesign end to end
   data analysis and recommendations to the founders.
 - **Built the supply chain** across China, India, Poland and the UK, from RFQs and design packages to production
   deadlines, including a visit to the pump supplier in China.
+
+<div class="gallery">
+  <figure>
+    <img src="{{ '/assets/img/adia-hub-redesign/prototype.jpg' | relative_url }}" alt="3D printed Hub prototype mounted on a board">
+    <figcaption>3D printed prototype.</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ '/assets/img/adia-hub-redesign/covers.jpg' | relative_url }}" alt="Thermoformed production cover above a two-part 3D printed cover">
+    <figcaption>Thermoformed production cover (top) and the 3D printed prototype cover (bottom).</figcaption>
+  </figure>
+</div>
 
 ## Result
 
