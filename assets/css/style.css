@@ -122,3 +122,14 @@ h3 { font-size: 19px; }
   .intro { padding-top: 44px; }
   .section-title { margin-top: 52px; }
 }
+
+/* Lean version additions */
+.card-body:first-child { padding-top: 22px; }
+.subhead { margin: 48px 0 14px; }
+.now { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.now li { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; }
+.now strong { display: block; font-size: 15.5px; margin-bottom: 4px; }
+.now span { color: var(--muted); font-size: 14.5px; }
+.gallery figure { margin: 0; }
+.gallery figcaption { color: var(--muted); font-size: 14px; margin-top: 6px; }
+.prose .gallery img { margin: 0; }
