@@ -40,14 +40,14 @@ As the only hardware engineer in a 10-person team, I led the redesign end to end
 - **Built the supply chain** across China, India, Poland and the UK, from RFQs and design packages to production
   deadlines, including a visit to the pump supplier in China.
 
-<div class="gallery">
-  <figure>
+<div class="gallery row">
+  <figure style="flex: 0.567">
     <img src="{{ '/assets/img/adia-hub-redesign/prototype.jpg' | relative_url }}" alt="3D printed Hub prototype mounted on a board">
     <figcaption>3D printed prototype.</figcaption>
   </figure>
-  <figure>
-    <img src="{{ '/assets/img/adia-hub-redesign/covers.jpg' | relative_url }}" alt="Thermoformed production cover above a two-part 3D printed cover">
-    <figcaption>Thermoformed production cover (top) and the 3D printed prototype cover (bottom).</figcaption>
+  <figure style="flex: 1.238">
+    <img src="{{ '/assets/img/adia-hub-redesign/covers.jpg' | relative_url }}" alt="Thermoformed production cover next to a two-part 3D printed cover">
+    <figcaption>Thermoformed production cover (left) and the 3D printed prototype cover (right).</figcaption>
   </figure>
 </div>
 
