@@ -133,3 +133,7 @@ h3 { font-size: 19px; }
 .gallery figure { margin: 0; }
 .gallery figcaption { color: var(--muted); font-size: 14px; margin-top: 6px; }
 .prose .gallery img { margin: 0; }
+.gallery { align-items: end; }
+.prose figure { margin: 20px 0; }
+.prose figcaption { color: var(--muted); font-size: 14px; margin-top: 6px; }
+.prose figure video { width: auto; max-width: 100%; max-height: 640px; display: block; }
