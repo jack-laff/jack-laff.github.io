@@ -32,6 +32,9 @@ Each device has a PIC18 microcontroller that talks to a Raspberry Pi running the
 I wrote and optimised the script and pass criteria with the software team, tuning the process over many runs for
 speed and reliability.
 
+The dashboard pictured above shows all-time totals across every production run, including the early runs before
+the fixes below (device data blurred).
+
 ## How the failure rate fell
 
 The QC data pointed to two root causes: a **firmware fault** and a **motor defect** that wasn't being caught.
