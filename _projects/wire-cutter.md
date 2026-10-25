@@ -1,25 +1,28 @@
 ---
-title: Automatic wire cutter and stripper
-context: Personal project
+title: From wire cutter to flexible PCB
+context: Adia Thermal production
 period: 2026
-order: 4
-summary: A desktop machine that cuts and strips wire for low-volume production, built to automate a slow, repetitive task.
-result: Cut a recurring 3-hour task to 30 minutes, with more accurate cuts.
+order: 3
+summary: A low-volume production step needed lots of wires cut by hand. I automated it with a wire cutter, then designed it out entirely with a flexible PCB.
+result: Cut a 3-hour wiring task to 30 minutes, then eliminated it with a flexible PCB.
 cover: /assets/img/wire-cutter/cover.jpg
 cover_alt: 3D printed wire cutter with two stepper motors and a lead screw
 metrics:
   - value: "3 h → 30 min"
-    label: recurring task time
-  - value: "2"
-    label: stepper motors, Pico-controlled
-tools: [Raspberry Pi Pico, Stepper motors, Fusion 360, 3D printing]
+    label: wire preparation, with the wire cutter
+  - value: "Eliminated"
+    label: wire cutting, with the flexible PCB
+tools: [Raspberry Pi Pico, Stepper motors, Fusion 360, 3D printing, KiCad, Flexible PCB]
 ---
 
 ## The problem
 
-Cutting and stripping wires by hand for low-volume production was a recurring 3-hour job, and the cut lengths varied.
+A low-volume production step needed lots of wires cut, stripped and hand-soldered. Cutting them was a recurring
+3-hour job: slow, tedious and error-prone, with cut lengths that varied.
 
-## What I built
+## First fix: a wire cutter
+
+I built a desktop machine to automate the cutting and stripping.
 
 - A **Raspberry Pi Pico** drives **two stepper motors**: one feeds the wire, the other operates the cutting and
   stripping mechanism.
@@ -30,7 +33,24 @@ Cutting and stripping wires by hand for low-volume production was a recurring 3-
   <figcaption>Early test footage, before the final tuning.</figcaption>
 </figure>
 
-## Result
+It cut the job from **3 hours to 30 minutes** of setup and post-processing, with more accurate, repeatable cuts.
 
-- A recurring **3-hour task reduced to 30 minutes** of setup and post-processing.
-- More accurate, repeatable cut lengths than cutting by hand.
+## Better fix: design the wires out
+
+The wire cutter made the step faster, but the wiring was still there. I realised I could remove it altogether, so I
+designed a **flexible PCB** in KiCad that replaces the hand-cut wires and is made cheaply in China.
+
+- **No wire cutting** at all.
+- **Faster, easier soldering.**
+- **A more repeatable assembly.**
+
+<div class="gallery">
+  <figure>
+    <img src="{{ '/assets/img/production-pcbs/flex-before.jpg' | relative_url }}" alt="Device with a hand-soldered wire assembly">
+    <figcaption>Before: hand-cut, hand-soldered wiring.</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ '/assets/img/production-pcbs/flex-after.jpg' | relative_url }}" alt="Same device with a flexible PCB in place of the wiring">
+    <figcaption>After: one flexible PCB. Main board obscured.</figcaption>
+  </figure>
+</div>
