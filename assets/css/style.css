@@ -143,3 +143,12 @@ h3 { font-size: 19px; }
 .skills-grid div { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; }
 .skills-grid dt { font-weight: 600; font-size: 14px; }
 .skills-grid dd { margin: 4px 0 0; color: var(--muted); font-size: 14.5px; }
+.hero-grid { display: grid; grid-template-columns: 1.55fr 1fr; gap: 48px; align-items: center; }
+.hero-grid h1 { max-width: none; }
+.hero-grid .cta { margin: 0; }
+.facts { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 6px 22px; }
+.facts div { padding: 14px 0; border-bottom: 1px solid var(--line); }
+.facts div:last-child { border-bottom: 0; }
+.facts dt { font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 600; }
+.facts dd { margin: 4px 0 0; font-size: 16px; }
+@media (max-width: 760px) { .hero-grid { grid-template-columns: 1fr; gap: 28px; } }
