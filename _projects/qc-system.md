@@ -47,6 +47,19 @@ Fixing both took the failure rate from **11% to under 1%**.
 ## Custom PCBs for production
 
 I also designed custom PCBs in KiCad, made by PCBWay, to remove or simplify tedious manual production steps.
+For example, a flexible PCB replaced a complicated hand-soldered wire assembly inside one of the devices with a
+single simple part.
+
+<div class="gallery">
+  <figure>
+    <img src="{{ '/assets/img/qc-system/flex-before.jpg' | relative_url }}" alt="Device with a hand-soldered wire assembly">
+    <figcaption>Before: hand-soldered wire assembly.</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ '/assets/img/qc-system/flex-after.jpg' | relative_url }}" alt="Same device with a flexible PCB in place of the wiring">
+    <figcaption>After: one flexible PCB. Main board obscured.</figcaption>
+  </figure>
+</div>
 
 ## Result
 
