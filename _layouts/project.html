@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+{%- comment -%}
+  Images only appear once the file has been uploaded, so missing images never show as broken.
+{%- endcomment -%}
 <article class="project wrap">
   <a class="back" href="{{ '/' | relative_url }}#projects">&larr; All projects</a>
 
@@ -8,7 +11,6 @@ layout: default
     <p class="eyebrow">{{ page.context }}{% if page.period %} &middot; {{ page.period }}{% endif %}</p>
     <h1>{{ page.title }}</h1>
     <p class="lead">{{ page.summary }}</p>
-    {% if page.status %}<p class="status">{{ page.status }}</p>{% endif %}
   </header>
 
   {% if page.metrics %}
@@ -19,9 +21,12 @@ layout: default
   </ul>
   {% endif %}
 
+  {% assign cover = site.static_files | where: "path", page.cover | first %}
+  {% if cover %}
   <figure class="hero">
     <img src="{{ page.cover | relative_url }}" alt="{{ page.cover_alt | default: page.title }}">
   </figure>
+  {% endif %}
 
   {% if page.tools %}
   <p class="tools">{% for t in page.tools %}<span>{{ t }}</span>{% endfor %}</p>
@@ -29,6 +34,29 @@ layout: default
 
   <div class="prose">
     {{ content }}
+
+    {% assign video = site.static_files | where: "path", page.video | first %}
+    {% if video %}
+    <h2>Demo</h2>
+    <video src="{{ page.video | relative_url }}" controls muted playsinline></video>
+    {% endif %}
+
+    {% assign shown = "" | split: "" %}
+    {% for g in page.gallery %}
+      {% assign f = site.static_files | where: "path", g.src | first %}
+      {% if f %}{% assign shown = shown | push: g %}{% endif %}
+    {% endfor %}
+    {% if shown.size > 0 %}
+    <h2>Gallery</h2>
+    <div class="gallery">
+      {% for g in shown %}
+      <figure>
+        <img src="{{ g.src | relative_url }}" alt="{{ g.alt }}" loading="lazy">
+        {% if g.caption %}<figcaption>{{ g.caption }}</figcaption>{% endif %}
+      </figure>
+      {% endfor %}
+    </div>
+    {% endif %}
   </div>
 
   <a class="back" href="{{ '/' | relative_url }}#projects">&larr; All projects</a>
