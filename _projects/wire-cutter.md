@@ -2,7 +2,7 @@
 title: From wire cutter to flexible PCB
 context: Adia Thermal production
 period: 2026
-order: 3
+order: 5
 summary: A low-volume production step needed lots of wires cut by hand. I automated it with a wire cutter, then designed it out entirely with a flexible PCB.
 result: Cut a 3-hour wiring task to 30 minutes, then eliminated it with a flexible PCB.
 cover: /assets/img/wire-cutter/cover.jpg

@@ -2,7 +2,7 @@
 title: Automated quality control system
 context: Adia Thermal
 period: 2025 – 2026
-order: 2
+order: 4
 summary: Wrote and optimised the end-of-line QC software used to inspect, calibrate and test every smart device.
 result: 4,000+ units tested, failure rate cut from 11% to under 1%.
 cover: /assets/img/qc-system/cover.png

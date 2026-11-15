@@ -2,7 +2,7 @@
 title: Formula Student rear suspension
 context: Imperial Formula Racing, Imperial College London
 period: 2024 – 2025
-order: 4
+order: 3
 summary: Project manager and suspension designer for a new rear double wishbone suspension on Imperial's first combustion-engined Formula Student car, taken from geometry and CAD through outsourced CNC manufacture to instrumented testing.
 result: CNC bolt-on mounts improved positional accuracy by 4.4%, with three camber presets, delivered £93 under budget.
 cover: /assets/img/formula-student/assembly.jpg
