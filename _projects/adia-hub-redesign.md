@@ -51,6 +51,17 @@ As the only hardware engineer in a 10-person team, I led the redesign end to end
   </figure>
 </div>
 
+<div class="gallery row">
+  <figure style="flex: 0.609">
+    <img src="{{ '/assets/img/adia-hub-redesign/real-prototype-covered.jpg' | relative_url }}" alt="Working Adia Hub prototype with its white cover fitted, showing the display and buttons">
+    <figcaption>Working prototype, cover on.</figcaption>
+  </figure>
+  <figure style="flex: 0.75">
+    <img src="{{ '/assets/img/adia-hub-redesign/real-prototype-internals.jpg' | relative_url }}" alt="Working Adia Hub prototype with the cover removed, showing the heat meter, pump and controller on the mounting plate">
+    <figcaption>Cover off: heat meter, pump and controller on the sheet metal mounting plate.</figcaption>
+  </figure>
+</div>
+
 ## Result
 
 - Unit cost cut by **36%**, turning the product profitable, and **assembly time halved**.
