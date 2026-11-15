@@ -27,7 +27,7 @@ Older adults also say they want robots for fetching, not personal care. We built
 teaches once, which then fetches things on request.
 
 <figure>
-  <video src="{{ '/assets/img/secretly-robots/demo.mp4' | relative_url }}" poster="{{ '/assets/img/secretly-robots/poster.jpg' | relative_url }}" controls playsinline preload="metadata"></video>
+  <video src="{{ '/assets/img/secretly-robots/demo.mp4' | relative_url }}" poster="{{ '/assets/img/secretly-robots/poster.jpg' | relative_url }}" controls muted playsinline loop preload="metadata"></video>
   <figcaption>Submission video: the person asks, the G1 finds the door locked, reroutes, fetches the bottle and delivers it. Then the carer teaches the drawer once.</figcaption>
 </figure>
 
