@@ -130,6 +130,8 @@ h3 { font-size: 19px; }
 .now li { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; }
 .now strong { display: block; font-size: 15.5px; margin-bottom: 4px; }
 .now span { color: var(--muted); font-size: 14.5px; }
+.now li.has-img { overflow: hidden; }
+.now li.has-img img { display: block; width: calc(100% + 32px); margin: -14px -16px 12px; aspect-ratio: 5 / 4; object-fit: cover; object-position: 50% 25%; }
 .gallery figure { margin: 0; }
 .gallery figcaption { color: var(--muted); font-size: 14px; margin-top: 6px; }
 .prose .gallery img { margin: 0; }
