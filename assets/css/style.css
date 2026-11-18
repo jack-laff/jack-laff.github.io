@@ -112,7 +112,7 @@ h3 { font-size: 19px; }
 .prose table { border-collapse: collapse; width: 100%; font-size: 15px; margin: 16px 0; }
 .prose th, .prose td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; }
 .prose th { background: var(--surface); }
-.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }
 .gallery img { margin: 0; }
 
 @media (max-width: 760px) {
@@ -126,7 +126,7 @@ h3 { font-size: 19px; }
 /* Lean version additions */
 .card-body:first-child { padding-top: 22px; }
 .subhead { margin: 48px 0 14px; }
-.now { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.now { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }
 .now li { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; }
 .now strong { display: block; font-size: 15.5px; margin-bottom: 4px; }
 .now span { color: var(--muted); font-size: 14.5px; }
