@@ -130,8 +130,16 @@ h3 { font-size: 19px; }
 .now li { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; }
 .now strong { display: block; font-size: 15.5px; margin-bottom: 4px; }
 .now span { color: var(--muted); font-size: 14.5px; }
-.now li.has-img { overflow: hidden; }
-.now li.has-img img { display: block; width: calc(100% + 32px); margin: -14px -16px 12px; aspect-ratio: 5 / 4; object-fit: cover; object-position: 50% 25%; }
+.now li.feature { grid-column: 1 / -1; display: grid; grid-template-columns: 260px 1fr; padding: 0; overflow: hidden; }
+.now li.feature img { width: 100%; height: 100%; min-height: 240px; object-fit: cover; object-position: 55% 35%; }
+.now .feature-body { padding: 18px 22px; }
+.now .feature-body .eyebrow { margin-bottom: 6px; }
+.now .feature-body .tools { margin: 14px 0 0; }
+.now .tools span { font-size: 13px; }
+@media (max-width: 640px) {
+  .now li.feature { grid-template-columns: 1fr; }
+  .now li.feature img { height: auto; min-height: 0; aspect-ratio: 1 / 1; object-position: 50% 0; }
+}
 .gallery figure { margin: 0; }
 .gallery figcaption { color: var(--muted); font-size: 14px; margin-top: 6px; }
 .prose .gallery img { margin: 0; }

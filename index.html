@@ -44,8 +44,16 @@ title: Jack Lafferty
 
   <h3 class="subhead">Now building</h3>
   <ul class="now">
+    <li class="feature">
+      <img src="{{ '/assets/img/rma/lab-setup.jpg' | relative_url }}" alt="UFACTORY Lite 6 arm at my lab station, with UFactory Studio on screen and the ArUco calibration target on the bench" loading="lazy">
+      <div class="feature-body">
+        <p class="eyebrow">In the lab · Imperial, 10 ECTS module</p>
+        <strong>Robotic Manipulators and Automation</strong>
+        <span>Hands-on labs on a six-axis UFACTORY Lite 6 arm, building up to vision-guided pick-and-place and a coursework build demonstrated in March 2027. I'm applying what I learn here to my own arm project.</span>
+        <p class="tools"><span>Python</span><span>OpenCV</span><span>Forward kinematics (DH)</span><span>Camera calibration</span><span>ArUco pose estimation</span><span>Hand-eye calibration</span><span>Next: inverse kinematics</span></p>
+      </div>
+    </li>
     <li><strong>Vision-guided pick-and-place arm</strong><span>ROS 2: an OpenCV node locates blocks from an RGB-D camera and MoveIt plans the grasps. In simulation (Gazebo).</span></li>
-    <li class="has-img"><img src="{{ '/assets/img/rma/lab-setup.jpg' | relative_url }}" alt="UFACTORY Lite 6 arm at my lab station, with UFactory Studio on screen and the ArUco calibration target on the bench" loading="lazy"><strong>Robotic Manipulators and Automation</strong><span>10 ECTS Imperial module, with hands-on labs on a six-axis UFACTORY Lite 6 arm. Forward kinematics (modified DH) in Python, camera calibration and ArUco pose estimation in OpenCV, and hand-eye calibration; next, inverse kinematics, kinematic calibration and vision-guided pick-and-place. It all feeds a coursework build (demo March 2027) and my own arm project.</span></li>
     <li><strong>DC motor position control</strong><span>Simulink model and a PID controller in C on a Raspberry Pi Pico with encoder feedback, validating the model against hardware.</span></li>
     <li><strong>Battery cell defect detection</strong><span>Final year project: a camera module with machine learning defect detection for a robotic battery cell line.</span></li>
     <li><strong>Vision-guided maze robot</strong><span>An autonomous vehicle in embedded C that navigates a maze using visual cues.</span></li>
